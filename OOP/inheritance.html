@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+
+    <script>
+
+        // child can access parents's and grandparent's property but parent can't access child's property
+
+        class Parent{
+            bike(){
+                console.log("Parent Method");
+            }
+            car(){
+                console.log("Parent Car Method")
+            }
+        }
+        class Child extends Parent{
+            bike(){
+                console.log("Child Method")
+            }
+
+        }
+        var abc = new Child();
+        abc.bike();
+        
+
+    </script>
+    
+</body>
+</html>
