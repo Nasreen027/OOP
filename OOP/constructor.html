@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+
+    <script>
+        // class Animal{
+        //     constructor(name,color){
+        //         this.a_name = name;
+        //         this.a_color = color;
+        //     }
+        //     eat(){
+        //         console.log("animal name is " + this.a_name)
+        //     }
+        // }
+        // var obj = new Animal("parrot", "green");
+        // obj.eat();
+        class Car{
+            constructor(model,name,price){
+             this.c_model = model;
+             this.c_name = name;
+             this.c_price = price;
+            }
+            drive(){
+                console.log("car model is " + this.c_model);
+                console.log("car name is " + this.c_name);
+                console.log("car price is " + this.c_price);
+            }
+            brake(){
+
+            }
+        }
+        let obj1 = new Car("256", "Car1" , "Rs:300000");
+        let obj2 = new Car("280","Car2","Rs:40000");
+        let obj3 = new Car("190","Car3","Rs:50000");
+        let obj4 = new Car("109","Car4","Rs:60000");
+        let obj5 = new Car("354","Car5","Rs:60000");
+        obj1.drive();
+        obj2.drive();
+        obj3.drive();
+        obj4.drive();
+        obj5.drive();
+    </script>
+</body>
+</html>
