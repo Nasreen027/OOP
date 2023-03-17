@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encapsulation Task</title>
+  </head>
+  <body>
+    <label>Name:</label>
+    <input type="text" name="" id="nameInp" />
+    <span id="nameError"></span>
+    <br /><br />
+    <label>Email:</label>
+    <input type="text" name="" id="emailInp" />
+    <span id="emailError"></span>
+    <br /><br />
+    <button type="submit" onclick="fun()">Submit</button>
+
+    <script>
+
+
+      function fun(){
+          let empName = document.getElementById("nameInp").value;
+          let empEmail = document.getElementById("emailInp").value;
+
+          class Student{
+              conditions(name,email){
+                  if(!empName & !empEmail){
+                      document.getElementById("nameError").innerHTML = "Please fill out this field";
+                      document.getElementById("emailError").innerHTML = "Please fill out this field";
+                  }
+                  else{
+                      document.getElementById("nameError").innerHTML = " ";
+                      document.getElementById("emailError").innerHTML = " ";
+                          this.name = name;
+                          this.email = email;
+                        //   console.log(name,email)
+                  }
+              }
+      }
+          let obj = new Student();
+          obj.conditions(empName,empEmail)
+        //   obj.setDetails(empName,empEmail);
+      }
+    </script>
+  </body>
+</html>
